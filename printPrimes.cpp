@@ -3,23 +3,28 @@
 using namespace std;
 int main()
 {
-    int limit;
+    int limit1, limit2;
     int i, j;
-    cin >> limit;
-    for (i = 0; i <= limit; i++)
+    cin >> limit1 >> limit2;
+    if ((limit1 >= 0 && limit2 > 0) && (limit1 < limit2))
     {
-        for (j = 2; j < i; j++)
+        for (i = limit1; i <= limit2; i++)
         {
-            if (i % j == 0)
+            for (j = 2; j < i; j++)
             {
-                break;
+                if (i % j == 0)
+                {
+                    break;
+                }
+            }
+            if (j == i)
+            {
+                cout << i << "\n";
             }
         }
-        if (j == i)
-        {
-            cout << i << "\n";
-        }
     }
+    else
+        cout << "Enter valid limits" << endl;
 
     return 0;
 }
