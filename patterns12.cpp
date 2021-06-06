@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    // to print a rhombus star pattern
+    // to print a palindromic number pattern
 
     int n;
     cout << "Enter any value for n : ";
@@ -13,11 +13,15 @@ int main()
     {
         for (int j = n - i; j > 0; j--)
         {
-            cout << " ";
+            cout << "  ";
         }
-        for (int k = 0; k < n; k++)
+        for (int k = i + 1; k > 0; k--)
         {
-            cout << " *";
+            cout << k<<" " ;
+        }
+        for (int l = 0; l < i; l++)
+        {
+            cout << l + 2 <<" ";
         }
         cout << endl;
     }

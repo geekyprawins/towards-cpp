@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    // to print a rhombus star pattern
+    // to print a pyramid of numbers
 
     int n;
     cout << "Enter any value for n : ";
@@ -15,9 +15,9 @@ int main()
         {
             cout << " ";
         }
-        for (int k = 0; k < n; k++)
+        for (int k = 0; k < i + 1; k++)
         {
-            cout << " *";
+            cout << k + 1<<" ";
         }
         cout << endl;
     }
