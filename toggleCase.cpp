@@ -25,5 +25,14 @@ int main()
             continue;
     }
     cout << "Toggled String is " << str << endl;
+
+    // using transform function 
+       // to upper
+    transform(str.begin(), str.end(), str.begin(), ::toupper);
+    cout << str << endl;
+       // to lower
+    transform(str.begin(), str.end(), str.begin(), ::tolower);
+    cout << str << endl;
+
     return 0;
 }
