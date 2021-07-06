@@ -2,13 +2,13 @@
 using namespace std;
 
 
-int setBit(int n , int pos){
+int setbit(int n , int pos){
 
     return n | (1<<pos) ; 
 }
 int main()
 {
-    cout<<setBit(5,  2)<<endl ; 
+    cout<<setbit(5,  2)<<endl ; 
 
     return 0;
 }
