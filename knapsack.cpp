@@ -16,7 +16,7 @@ int knapSack(int weight[], int value[], int n, int W)
 
 int main()
 {
-    int wt[] = {10, 20, 30};
+    int wt[] = {10, 30, 20};
     int value[] = {60, 100, 120};
     int n = 3;
     int W = 50;
