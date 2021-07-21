@@ -1,5 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+// knapsack problem
+// Given a set of items with their weights and values,
+// find the maximum value of items that can be taken
+// from the bag.
+
+
 int knapSack(int weight[], int value[], int n, int W)
 {
     if (n == 0 || W == 0)
